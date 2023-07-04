@@ -1,6 +1,6 @@
 // 处理发布时间 moment.js
 // moment.js locale
-moment.updateLocale('zh-cn', {
+moment.updateLocale('en-us', {
     meridiem: function (hour, minute, isLowercase) {
         if (hour < 6) {
             return "凌晨";
