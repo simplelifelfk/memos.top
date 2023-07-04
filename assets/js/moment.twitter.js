@@ -3,17 +3,17 @@
 moment.updateLocale('en-us', {
     meridiem: function (hour, minute, isLowercase) {
         if (hour < 6) {
-            return "凌晨";
+            return "Early Morning";
         } else if (hour < 9) {
-            return "早上";
+            return "Morning";
         } else if (hour < 11 && minute < 30) {
-            return "上午";
+            return "Late Morning";
         } else if (hour < 13 && minute < 30) {
-            return "中午";
+            return "Noon";
         } else if (hour < 18) {
-            return "下午";
+            return "Afternoon";
         } else {
-            return "晚上";
+            return "Night";
         }
     }
 });
@@ -28,20 +28,20 @@ moment.updateLocale('en-us', {
     year = new Date().getFullYear();
     formats = {
         seconds: {
-            short: ' 秒前',
-            long: ' 秒前'
+            short: ' seconds ago',
+            long: ' seconds ago'
         },
         minutes: {
-            short: ' 分前',
-            long: ' 分前'
+            short: ' minutes ago',
+            long: ' minutes ago'
         },
         hours: {
-            short: ' 小时前',
-            long: ' 小时前'
+            short: ' hours ago',
+            long: ' hours ago'
         },
         days: {
-            short: ' 天前',
-            long: ' 天前'
+            short: ' days ago',
+            long: ' days ago'
         }
     };
 
